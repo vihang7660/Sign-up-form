@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+:root {
+    --sideWidth: 40vw;
+}
+
+[alt = 'background'] {
+    height: 100vh;
+    width: var(--sideWidth);
+
+}
