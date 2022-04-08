@@ -5,11 +5,118 @@ body {
 }
 
 :root {
-    --sideWidth: 40vw;
+    --sideWidth: 35vw;
+    --left-margin: 50px;
 }
 
 [alt = 'background'] {
     height: 100vh;
     width: var(--sideWidth);
 
+}
+
+.sidebar {
+    height: 100vh;
+    width: var(--sideWidth);
+    display: flex;
+}
+
+.header, .lower {
+    background-color: rgb(243, 243, 239);
+    /* min-height: 33vh; */
+    padding-left: var(--left-margin);
+}
+
+.header {
+    font-weight: 600;
+    font-size: 26px;
+    padding-top: 12vh;
+}
+
+.lower {
+    flex-grow: 1; 
+}
+
+.header > p {
+    margin-top: 0px;
+}
+
+.mid {
+    padding-left: var(--left-margin);
+    flex-grow: 1;
+}
+
+
+input {
+    width: 18vw;
+    border-radius: 5px;
+}
+
+.fl,.enum,.password {
+    display: flex;
+    gap: 5vw;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+button {
+    background-color: #596D48;
+    padding: 5px 20px;
+    font-size: 22px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+a {
+    color: #596D48;
+}
+
+.lower p {
+    font-size: 22px;
+}
+
+.logo {
+    background-color: #343a2f;
+    opacity: 0.5;
+    height: 20vh;
+    min-height: 80px;
+    display: flex;
+    position: absolute;
+    top: 40vh;
+    justify-content: center;
+    align-items: center;
+    width: var(--sideWidth)
+}
+
+.logo img {
+    height: 100%;
+}
+
+@font-face {
+    font-family: Norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+.logo p {
+    font-size: 80px;
+    font-family: Norse-bold;
+    color: rgb(247, 255, 250);
+}
+
+button:hover {
+    background-color: #3d5c21;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
